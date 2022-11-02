@@ -1,0 +1,195 @@
+/* common styles */
+
+:root {
+  /* fonts */
+  --main-font: "PT Sans", sans-serif;
+  --second-font: "Playfair Display", serif;
+
+  /* colors */
+  --main-dark-color: #000000;
+  --second-dark-color: #0f0f0f;
+  --back-dark-color: #191b1c;
+  --main-light-color: #ffffff;
+  --gray-color: #969696;
+  --light-gray-color: #d0d0d0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--main-light-color);
+  max-width: 1920px;
+  background-color: var(--main-dark-color);
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+[class*="-container"] {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1169.98px) {
+  [class*="-container"] {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 990.98px) {
+  [class*="-container"] {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  [class*="-container"] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+
+/* header */
+
+.header {
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+}
+
+.header-top-contact {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-top-contact-ico {
+  width: 16px;
+  height: 16px;
+  fill: var(--gray-color);
+}
+
+.header-top-contact-info {
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--gray-color);
+}
+
+.header-top-contact-info a:hover {
+  text-decoration: underline;
+}
+
+.header-top-log_reg {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+
+.header-top-log_reg:hover {
+  text-decoration: underline;
+}
+
+.header-top-log_reg-ico {
+  width: 14px;
+  height: 14px;
+  fill: var(--gray-color);
+}
+
+.header-top-log_reg-info {
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--gray-color);
+}
+
+.header-bottom {
+  background-color: var(--second-dark-color);
+}
+
+.header-bottom .header-bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header-bottom-logo {
+  font-family: "post-no-bills-jaffna-bold", sans-serif;
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--main-light-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: auto 0px;
+}
+
+.menu {
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  height: 100%;
+}
+
+.header-item {
+}
+
+.header-item:hover {
+  background-color: #1f1f1f;
+  color: var(--main-light-color);
+}
+
+.header-link {
+  line-height: 1.29;
+  text-transform: uppercase;
+  color: var(--gray-color);
+}
+
+.header-link-img {
+  width: 22px;
+  height: 22px;
+  fill: var(--main-light-color);
+}
+
+/* font-face */
+
+@font-face {
+  font-family: "post-no-bills-jaffna-bold";
+  src: url("../fonts/PostNoBillsJaffna-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
